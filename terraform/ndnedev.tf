@@ -1,17 +1,17 @@
-module "ndne-dev" {
+module "ndne_dev" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "awstest0104.ndne.dev@gmail.com"
     AccountName               = "ndne-dev"
-    ManagedOrganizationalUnit = "DEV (ou-ng9l-7x3kzsme)"
+    ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "awstest0104.ndne.dev@gmail.com"
     SSOUserFirstName          = "DAE YOUNG"
     SSOUserLastName           = "LEE"
   }
 
   account_tags = {
-    "Project" = "NDNE"
+    "Project" = "Sandbox"
     "Environment" = "DEV"
   }
 
@@ -24,5 +24,5 @@ module "ndne-dev" {
     group = "non-prod"
   }
 
-  account_customizations_name = "ndnedev"
+  account_customizations_name = "sandbox"
 }
