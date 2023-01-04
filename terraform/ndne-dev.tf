@@ -1,4 +1,4 @@
-module "ndne-dev" {
+module "ndne_dev" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -23,4 +23,6 @@ module "ndne-dev" {
   custom_fields = {
     group = "non-prod"
   }
+  
+  account_customizations_name = "sandbox"
 }
