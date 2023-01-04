@@ -4,7 +4,7 @@ module "ndne_dev" {
   control_tower_parameters = {
     AccountEmail              = "awstest0104.ndne.dev@gmail.com"
     AccountName               = "ndne-dev"
-    ManagedOrganizationalUnit = "NDNE/DEV"
+    ManagedOrganizationalUnit = "NDNE"
     SSOUserEmail              = "awstest0104.ndne.dev@gmail.com"
     SSOUserFirstName          = "DAE YOUNG"
     SSOUserLastName           = "LEE"
